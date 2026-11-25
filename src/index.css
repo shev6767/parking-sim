@@ -1,0 +1,120 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f3f4f8;
+  color: #222;
+}
+
+.page {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+.controls {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.controls input {
+  width: 60px;
+  padding: 4px;
+}
+
+button {
+  padding: 6px 14px;
+  border: none;
+  border-radius: 4px;
+  background: #2952cc;
+  color: white;
+  cursor: pointer;
+}
+
+button.gray {
+  background: #777;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.box {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 12px 16px;
+  margin-bottom: 16px;
+}
+
+.box h2 {
+  margin-top: 0;
+  font-size: 18px;
+}
+
+.box p {
+  margin: 6px 0;
+}
+
+.plus {
+  color: green;
+  font-weight: bold;
+}
+
+.minus {
+  color: #c00;
+  font-weight: bold;
+}
+
+.spots {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 8px;
+}
+
+.spot {
+  border: 1px solid #9c9;
+  background: #eefbee;
+  border-radius: 4px;
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+}
+
+.spot.busy {
+  border-color: #e99;
+  background: #fdeeee;
+}
+
+table {
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+th,
+td {
+  border: 1px solid #ccc;
+  padding: 4px 10px;
+  text-align: center;
+}
+
+tr.best {
+  background: #dff3df;
+  font-weight: bold;
+}
+
+.answer {
+  font-weight: bold;
+}
+
+@media (max-width: 600px) {
+  .stats {
+    grid-template-columns: 1fr;
+  }
+}
